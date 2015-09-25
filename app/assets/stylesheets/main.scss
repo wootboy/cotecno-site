@@ -1,29 +1,29 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "font-awesome";
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "font-awesome";
 
-//vendors
-@import "simple-line-icons";
-@import "owl.carousel.min";
-@import "owl.theme.default.min";
-@import "magnific-popup";
-
-
-//Theme CSS
-
-    @import "theme.css";
-    @import "theme-elements.css";
-    @import "theme-blog.css";
-    @import "theme-shop.css";
-    @import "theme-animate.css";
+ //vendors
+ @import "vendor/simple-line-icons/css/simple-line-icons";
+ @import "vendor/owlcarousel/owl.carousel.min";
+ @import "vendor/owlcarousel/owl.theme.default.min";
+ @import "vendor/magnific-popup/magnific-popup";
 
 
-// Current Page CSS -->
-    @import"settings.css";
-    @import"component.css";
+ //Theme CSS
 
-  //  <!-- Skin CSS -->
-    @import"default.css";
+     @import "theme.css";
+     @import "theme-elements.css";
+     @import "theme-blog.css";
+     @import "theme-shop.css";
+     @import "theme-animate.css";
 
-  //  <!-- Theme Custom CSS -->
-    @import"css/custom.css";
+//  <!-- Current Page CSS -->
+@import "vendor/rs-plugin/css/settings.css";
+@import "vendor/circle-flip-slideshow/css/component.css";
+
+    // <!-- Skin CSS -->
+     @import"skins/default.css";
+
+     //<!-- Theme Custom CSS -->
+     @import"css/custom.css";
+
