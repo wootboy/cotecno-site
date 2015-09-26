@@ -28,17 +28,17 @@
            markers: [
             {
               address: "portugal 1656,santiago,chile",
-              html: "Melbourne, Australia"
+              html: "Santiago,Chile"
             },
 
          ],
-         doubleclickzoom: false,
+         doubleclickzoom: true,
          controls: {
            panControl: true,
            zoomControl: true,
            mapTypeControl: false,
-           scaleControl: false,
-           streetViewControl: false,
+           scaleControl: true,
+           streetViewControl: true,
            overviewMapControl: false
          }
 
@@ -60,42 +60,6 @@
             showTooltip: true,
             values: sample_data,
             scaleColors: ['#C8EEFF', '#006491'],
-            normalizeFunction: 'polynomial'
-          });
-          $('#vmap2').vectorMap({
-            map: 'usa_en',
-            backgroundColor: null,
-            color: '#006666',
-            hoverOpacity: 0.7,
-            selectedColor: '#333',
-            enableZoom: true,
-            showTooltip: true,
-            values: sample_data,
-            scaleColors: ['#339966', '#006666'],
-            normalizeFunction: 'polynomial'
-          });
-          $('#vmap3').vectorMap({
-            map: 'europe_en',
-            backgroundColor: null,
-            color: '#ffffff',
-            hoverOpacity: 0.7,
-            selectedColor: '#666666',
-            enableZoom: true,
-            showTooltip: true,
-            values: sample_data,
-            scaleColors: ['#996633', '#331A00'],
-            normalizeFunction: 'polynomial'
-          });
-          $('#vmap4').vectorMap({
-            map: 'germany_en',
-            backgroundColor: null,
-            color: '#8F6B00',
-            hoverOpacity: 0.7,
-            selectedColor: '#666666',
-            enableZoom: true,
-            showTooltip: true,
-            values: sample_data,
-            scaleColors: ['#B28F00', '#331A00'],
             normalizeFunction: 'polynomial'
           });
 
