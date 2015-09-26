@@ -32,16 +32,16 @@
     //= require vendor/vide/vide.js
 
 
-//= require theme
+
     //= require vendor/rs-plugin/js/jquery.themepunch.tools.min.js
     //= require vendor/rs-plugin/js/jquery.themepunch.revolution.min.js
     //= require vendor/circle-flip-slideshow/js/jquery.flipshow
     //= require views/view.home
 
     //= require custom
+    //= require theme.init
+//= require theme
 
-
-    //= require theme.init.js
 
 
 

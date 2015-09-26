@@ -3,6 +3,9 @@
   <meta charset="utf-8">
 
 
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
 
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -22,6 +25,15 @@
   <!-- Web Fonts  -->
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+
+  <!-- Theme CSS -->
   <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="css/theme-elements.css">
   <link rel="stylesheet" href="css/theme-blog.css">
