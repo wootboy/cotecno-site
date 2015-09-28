@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :productos
   root to: 'pages#index'
   get 'about' => 'pages#about', path: 'acerca'
   get 'areas' => 'pages#areas', path: 'areas'
