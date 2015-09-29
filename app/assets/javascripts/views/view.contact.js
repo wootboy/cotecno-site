@@ -1,7 +1,6 @@
 /*
 Name: 			View - Contact
-Written by: 	Okler Themes - (http://www.okler.net)
-Version: 		4.1.1
+
 */
 
 (function($) {
@@ -33,7 +32,7 @@ Version: 		4.1.1
 				},
 				dataType: 'json',
 				complete: function(data) {
-				
+
 					if (typeof data.responseJSON === 'object') {
 						if (data.responseJSON.response == 'success') {
 
@@ -57,7 +56,7 @@ Version: 		4.1.1
 							}
 
 							$submitButton.button('reset');
-							
+
 							return;
 
 						}
@@ -74,7 +73,7 @@ Version: 		4.1.1
 
 					$form.find('.has-success')
 						.removeClass('has-success');
-						
+
 					$submitButton.button('reset');
 
 				}

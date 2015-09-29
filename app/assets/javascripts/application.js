@@ -39,7 +39,7 @@
     //= require vendor/rs-plugin/js/jquery.themepunch.revolution.min.js
     //= require vendor/circle-flip-slideshow/js/jquery.flipshow
     //= require views/view.home
-
+    //= require views/view.contact
     //= require custom
     //= require theme.init
 //= require theme
