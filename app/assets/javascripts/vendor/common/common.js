@@ -1,7 +1,5 @@
 /*
 Plugin Name: 	BrowserSelector
-Written by: 	Okler Themes - (http://www.okler.net)
-Version: 		4.1.1
 */
 
 (function($) {
@@ -379,24 +377,24 @@ Description: 	Simple jQuery plugin designed to emulate an 'after resize' event.
 
 ( function( $ ) {
 	"use strict";
-	
+
 	// Define default settings
 	var defaults = {
 		action: function() {},
 		runOnLoad: false,
 		duration: 500
 	};
-	
+
 	// Define global variables
 	var settings = defaults,
 		running = false,
 		start;
-	
+
 	var methods = {};
-	
+
 	// Initial plugin configuration
 	methods.init = function() {
-		
+
 		// Allocate passed arguments to settings based on type
 		for( var i = 0; i <= arguments.length; i++ ) {
 			var arg = arguments[i];
@@ -412,26 +410,26 @@ Description: 	Simple jQuery plugin designed to emulate an 'after resize' event.
 					break;
 			}
 		}
-	
+
 		// Process each matching jQuery object
 		return this.each(function() {
-		
+
 			if( settings.runOnLoad ) { settings.action(); }
-			
+
 			$(this).resize( function() {
-				
+
 				methods.timedAction.call( this );
-				
+
 			} );
-		
+
 		} );
 	};
-	
+
 	methods.timedAction = function( code, millisec ) {
-		
+
 		var doAction = function() {
 			var remaining = settings.duration;
-			
+
 			if( running ) {
 				var elapse = new Date() - start;
 				remaining = settings.duration - elapse;
@@ -441,46 +439,44 @@ Description: 	Simple jQuery plugin designed to emulate an 'after resize' event.
 					running = false;
 					// Perform user defined function
 					settings.action();
-				
+
 					return;
 				}
 			}
 			wait( remaining );
 		};
-		
+
 		var wait = function( time ) {
 			running = setTimeout( doAction, time );
 		};
-		
+
 		// Define new action starting time
 		start = new Date();
-		
+
 		// Define runtime settings if function is run directly
 		if( typeof millisec === 'number' ) { settings.duration = millisec; }
 		if( typeof code === 'function' ) { settings.action = code; }
-		
+
 		// Only run timed loop if not already running
 		if( !running ) { doAction(); }
-		
+
 	};
 
-	
+
 	$.fn.afterResize = function( method ) {
-		
+
 		if( methods[method] ) {
 			return methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ) );
 		} else {
 			return methods.init.apply( this, arguments );
 		}
-		
+
 	};
-	
+
 })(jQuery);
 
 /*
 Plugin Name: 	matchHeight
-Written by: 	Okler Themes - (http://www.okler.net)
-Version: 		4.1.1
 
 Based on:
 
@@ -821,8 +817,7 @@ Based on:
 
 /*
 Plugin Name: 	jQuery.pin
-Written by: 	Okler Themes - (http://www.okler.net)
-Version: 		4.1.1
+
 
 Based on:
 
@@ -884,7 +879,7 @@ Based on:
             scrollY = $window.scrollTop();
 
             var elmts = [];
-            for (var i=0, len=elements.length; i<len; i++) {          
+            for (var i=0, len=elements.length; i<len; i++) {
                 var $this = $(elements[i]),
                     data  = $this.data("pin");
 
@@ -892,16 +887,16 @@ Based on:
                   continue;
                 }
 
-                elmts.push($this); 
-                  
+                elmts.push($this);
+
                 var from = data.from - data.pad.bottom,
                     to = data.to - data.pad.top;
-              
+
                 if (from + $this.outerHeight() > data.end) {
                     $this.css('position', '');
                     continue;
                 }
-              
+
                 if (from < scrollY && to > scrollY) {
                     !($this.css("position") == "fixed") && $this.css({
                         left: $this.offset().left,
@@ -925,7 +920,7 @@ Based on:
         var update = function () { recalculateLimits(); onScroll(); };
 
         this.each(function () {
-            var $this = $(this), 
+            var $this = $(this),
                 data  = $(this).data('pin') || {};
 
             if (data && data.update) { return; }
@@ -947,8 +942,7 @@ Based on:
 
 /*
 Plugin Name: 	smoothScroll for jQuery.
-Written by: 	Okler Themes - (http://www.okler.net)
-Version: 		4.1.1
+
 
 Based on:
 

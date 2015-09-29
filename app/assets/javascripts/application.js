@@ -17,17 +17,19 @@
 
 //= require vendor/jquery.appear/jquery.appear
 //= require jquery.easing
-    //= require vendor/jquery-cookie/jquery-cookie
+//= require jquery.cookie
 //= require bootstrap-sprockets
     //= require vendor/common/common
     //= require vendor/jquery.validation/jquery.validation.js
-    //= require vendor/jquery.stellar/jquery.stellar
+    //= require jquery.stellar.min
+    // tiene gema pero no quize webeo el piechart
     //= require vendor/jquery.easy-pie-chart/jquery.easy-pie-chart
+    // tiene gema pero para que cambiarla
     //= require vendor/jquery.gmap/jquery.gmap
     //= require vendor/jquery.lazyload/jquery.lazyload
     //= require vendor/isotope/jquery.isotope.js
     //= require vendor/owlcarousel/owl.carousel
-    //= require vendor/jflickrfeed/jflickrfeed
+    // require vendor/jflickrfeed/jflickrfeed
     //= require vendor/magnific-popup/jquery.magnific-popup
     //= require vendor/vide/vide.js
 

@@ -64,5 +64,7 @@ end
 group :production do
   gem 'rails_12factor'
 end
-
+# gemas para no usar el js del template
 gem 'jquery-easing-rails'
+gem 'jquery-cookie-rails'
+gem 'stellar-js-rails'
