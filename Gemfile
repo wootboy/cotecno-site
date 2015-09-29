@@ -50,9 +50,7 @@ gem "font-awesome-rails"
 
 gem 'bootstrap-sass', '~> 3.3.5'
 
-group :doc do
-  gem 'sdoc', '~> 0.4.0'
-end
+
 
 group :development do
   gem 'better_errors'
@@ -67,3 +65,4 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'jquery-easing-rails'

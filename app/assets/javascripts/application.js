@@ -9,14 +9,14 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//= require vendor/modernizr/modernizr
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require vendor/modernizr/modernizr
 
 
 //= require vendor/jquery.appear/jquery.appear
-    //= require vendor/jquery.easing/jquery.easing
+//= require jquery.easing
     //= require vendor/jquery-cookie/jquery-cookie
 //= require bootstrap-sprockets
     //= require vendor/common/common
