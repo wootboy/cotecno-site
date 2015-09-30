@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contacts
   resources :productos
   root to: 'pages#index'
   get 'about' => 'pages#about', path: 'acerca'
