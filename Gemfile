@@ -68,3 +68,7 @@ end
 gem 'jquery-easing-rails'
 gem 'jquery-cookie-rails'
 gem 'stellar-js-rails'
+
+
+
+gem 'devise', '3.4.1'
